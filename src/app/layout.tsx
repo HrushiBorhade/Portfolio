@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 import Header from "@/components/header/page";
 import Dock from "@/components/Dock";
 
-export const fontSans = FontSans({
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -20,12 +20,12 @@ const fontHeading = localFont({
   src: "../../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
 });
-export const fontPoppins = Poppins({
+const fontPoppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600"],
 });
-export const fontMontserrat = Montserrat({
+const fontMontserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   weight: ["100", "200", "300", "400", "500", "600"],
