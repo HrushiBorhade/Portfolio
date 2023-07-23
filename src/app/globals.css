@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    ::-webkit-scrollbar {
+      background-color: black;
+      width: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #424242;
+      border-radius: 20px;
+    }
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.custom-top {
+  top: calc(100vh - 750px);
+}
+.custom-top-2 {
+  top: calc(100vh - 600px);
+}
+
+@media (max-width: 1023px) {
+  .custom-top-2 {
+    top: calc(100vh - 550px);
+  }
+}
+@media (max-width: 760px) {
+  .custom-top-2 {
+    top: calc(100vh - 450px);
+  }
+}
+.project-hover:hover {
+  opacity: 0.5;
+}
+
+.project-hover:hover h2 {
+  transform: translateX(-10px);
+}
+
+.project-hover:hover p {
+  transform: translateX(10px);
+}
+.outline-heading {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
