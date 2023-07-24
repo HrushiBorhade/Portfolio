@@ -37,7 +37,7 @@ body {
   top: calc(100vh - 750px);
 }
 .custom-top-2 {
-  top: calc(100vh - 600px);
+  top: calc(100vh - 575px);
 }
 
 @media (max-width: 1023px) {
