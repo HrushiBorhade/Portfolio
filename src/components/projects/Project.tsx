@@ -18,12 +18,12 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div
-      className=" w-[100%] gap-4 px-5 md:px-0  p-[50px_100px_50px_100px]  border-t border-t-zinc-800 border-b-zinc-800 last:border-b  project-hover"
+      className=" w-[100%]  px-5 md:px-0  p-[50px_100px_50px_100px]  border-t border-t-zinc-800 border-b-zinc-800 last:border-b  project-hover"
       onMouseEnter={() => setModal({ active: true, index })}
       onMouseLeave={() => setModal({ active: false, index })}
     >
       <Link href={link} target="_blank">
-        <div className="flex items-center justify-between md:justify-around">
+        <div className="flex items-center justify-between gap-4 md:justify-around">
           <h2 className=" font-heading text-2xl sm:text-4xl lg:text-6xl m-0 transition-[all_0.4s]">
             {title}
           </h2>
