@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
-import { modal } from "./Projects";
+import { modal, project } from "./Projects";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
+import Link from "next/link";
 interface modalProps {
   modal: modal;
-  projects: { title: string; src: string; color: string }[];
+  projects: project[];
 }
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -74,27 +75,30 @@ const Modal = ({ modal, projects }: modalProps) => {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-        className="h-[300px] w-[350px] sm:h-[300px] sm:width-[500px] absolute bg-black rounded-lg overflow-hidden pointer-events-none flex items-center justify-center"
+        className="h-[200px] w-[300px] md:w-[400px] md:h-[300px]  absolute bg-black rounded-lg overflow-hidden pointer-events-none flex items-center justify-center"
       >
         <div
           style={{ top: index * -100 + "%" }}
           className="h-[100%] w-[100%] absolute transition-[top_0.5s_cubic-bezier(0.76,_0,_0.24,_1)]"
         >
           {projects.map((project, index) => {
-            const { src, color } = project;
+            const { src, color, link } = project;
             return (
               <div
                 className="h-[100%] w-[100%] flex items-center justify-center"
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <Image
-                  src={`/images/${src}`}
-                  width={300}
-                  height={0}
-                  alt="image"
-                  className="h-auto"
-                />
+                {/* @ts-ignore */}
+                <Link href={link}>
+                  <Image
+                    src={`/images/${src}`}
+                    width={300}
+                    height={0}
+                    alt="image"
+                    className="h-auto w-[250px] md:w-[300px]"
+                  />
+                </Link>
               </div>
             );
           })}

@@ -149,6 +149,11 @@ export default function Home() {
         </div>
       </div>
       <Projects />
+      <h2 className="mb-36 text-base w-[70%] mx-auto text-center font-poppins md:text-xl text-zinc-500">
+        {" "}
+        Website is under Development, Will deploy the complete portfolio with
+        even more cooler animations soon🚀
+      </h2>
     </main>
   );
 }

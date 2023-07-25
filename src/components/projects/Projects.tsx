@@ -3,32 +3,42 @@
 import { useState } from "react";
 import Project from "./Project";
 import Modal from "./Modal";
-
+export interface project {
+  title: string;
+  description: string;
+  src: string;
+  link: string;
+  color: string;
+}
 interface ProjectsProps {}
-const projects = [
+export const projects: project[] = [
   {
     title: "Devlink",
     description: "Unifying Developers around the world",
     src: "devlink.png",
     color: "#4b4657",
+    link: "https://github.com/HrushiBorhade/DevLink",
   },
   {
     title: "Sage.ai",
     description: "Your Mental Health Companion",
     src: "sage-ai.png",
     color: "#939b5f",
+    link: "https://github.com/HrushiBorhade/Sage-AI",
   },
   {
     title: "NoteNexus",
     description: "Craft Your Thoughts with Ease",
     src: "notenexus.png",
     color: "#EFE8D3",
+    link: "https://github.com/HrushiBorhade/NoteNexus",
   },
   {
     title: "Pixel.ai",
     description: "AI-Powered Image Creation",
     src: "pixel-ai.jpg",
     color: "#706D63",
+    link: "https://github.com/HrushiBorhade/Pixel-AI",
   },
 ];
 export type modal = {
@@ -49,6 +59,7 @@ const Projects = ({}: ProjectsProps) => {
               index={index}
               description={project.description}
               title={project.title}
+              link={project.link}
               setModal={setModal}
               key={index}
             />

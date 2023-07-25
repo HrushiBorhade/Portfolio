@@ -47,7 +47,7 @@ body {
 }
 @media (max-width: 760px) {
   .custom-top-2 {
-    top: calc(100vh - 450px);
+    top: calc(100vh - 400px);
   }
 }
 .project-hover:hover {
