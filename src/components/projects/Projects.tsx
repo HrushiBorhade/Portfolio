@@ -48,11 +48,12 @@ export type modal = {
 const Projects = ({}: ProjectsProps) => {
   const [modal, setModal] = useState<modal>({ active: false, index: 0 });
   return (
-    <div className="flex h-[110vh] items-center justify-center">
-      <div className="flex flex-col text-start  items-start justify-center  w-[340px] sm:w-[500px] lg:w-[1000px]">
+    <div className="flex h-[110vh] items-center justify-center" id="work">
+      <div className="flex flex-col text-start   items-start justify-center  w-[340px] sm:w-[500px] lg:w-[1000px]">
         <p className="p-4 mb-4 text-sm text-gray-400 font-poppins">
           Recent work
         </p>
+
         {projects.map((project, index) => {
           return (
             <Project

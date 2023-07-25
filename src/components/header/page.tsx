@@ -1,15 +1,22 @@
 "use client";
 import { AnimatePresence, delay, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "./nav/page";
 import { background, bg, opacity, transition } from "./anim";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 interface HeaderProps {}
 
 const Header = ({}: HeaderProps) => {
   const [isActive, setIsActive] = useState<Boolean>(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  useEffect(() => {
+    setIsActive(false);
+    router.refresh();
+  }, [pathname, router]);
   return (
     <motion.div
       variants={bg}

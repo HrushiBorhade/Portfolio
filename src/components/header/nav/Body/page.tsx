@@ -1,7 +1,9 @@
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import { usePathname, useRouter } from "next/navigation";
 import { blur, translate } from "../../anim";
+import { useEffect } from "react";
 interface bodyProps {
   links: {
     title: string;
@@ -36,6 +38,11 @@ export default function Body({
     });
     return chars;
   };
+  const pathname = usePathname();
+  const router = useRouter();
+  useEffect(() => {
+    router.refresh();
+  }, [pathname, router]);
 
   return (
     <div className="flex flex-col  gap-2 md:gap-4 flex-wrap mt-10 h-[50vh] pl-4 md:pl-20">

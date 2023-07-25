@@ -5,6 +5,7 @@ import { useState } from "react";
 import { height } from "../anim";
 import Body from "./Body/page";
 import ImageNav from "./Image/page";
+
 interface navProps {}
 const links = [
   {
@@ -37,6 +38,7 @@ const Nav = ({}) => {
     isActive: false,
     index: 0,
   });
+
   return (
     <motion.div
       variants={height}
