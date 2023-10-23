@@ -24,10 +24,10 @@ const Project = ({
     >
       <Link href={link} target="_blank">
         <div className="flex items-center justify-between gap-4 md:justify-around">
-          <h2 className=" font-heading text-2xl sm:text-4xl lg:text-6xl m-0 transition-[all_0.4s]">
+          <h2 className=" font-syne text-gradient font-bold text-2xl sm:text-4xl lg:text-6xl m-0 transition-[all_0.4s]">
             {title}
           </h2>
-          <p className="transition-[all_0.4s] m-0 font-poppins font-normal">
+          <p className="transition-[all_0.4s] m-0 subtext-gradient text-lg font-syne font-medium">
             {description}
           </p>
         </div>

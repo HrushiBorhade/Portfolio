@@ -71,7 +71,6 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-
       <div className="relative w-full grainy h-[100vh] ">
         <div className="absolute p-2  top-[20%] md:top-[20%] left-[10%] md:left-[15%] flex items-center flex-col  ">
           <MaskText phrases={phrases} />
@@ -99,10 +98,10 @@ export default function Home() {
         </div>
       </div>
       <Projects />
-      <h2 className="mb-36 text-base w-[70%] mx-auto text-center font-poppins md:text-xl text-zinc-500">
+      <h2 className="mb-36 text-base w-[70%] mx-auto text-center font-syne subtext-gradient md:text-xl text-zinc-500">
         {" "}
         Website is under Development, Will deploy the complete portfolio with
-        even more cooler animations soon🚀
+        even more cooler animations soon :)
       </h2>
     </main>
   );

@@ -50,7 +50,7 @@ const Projects = ({}: ProjectsProps) => {
   return (
     <div className="flex h-[110vh] items-center justify-center" id="work">
       <div className="flex flex-col text-start   items-start justify-center  w-[340px] sm:w-[500px] lg:w-[1000px]">
-        <p className="p-4 mb-4 text-sm text-gray-400 font-poppins">
+        <p className="p-4 mb-4 text-sm subtext-gradient font-syne ">
           Recent work
         </p>
 
