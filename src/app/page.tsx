@@ -77,7 +77,7 @@ export default function Home() {
           <MaskText phrases={phrases} />
         </div>
 
-        <div className="absolute custom-top-2  mt-10 md:mt-20 animate-fade-in [--animation-delay:3000ms] opacity-0 translaye-y-[-10px]">
+        <div className="absolute custom-top-2  mt-10 md:mt-36 animate-fade-in [--animation-delay:3000ms] opacity-0 translaye-y-[-10px]">
           <div ref={slider2} className="relative whitespace-nowrap ">
             <p
               ref={firstText2}
