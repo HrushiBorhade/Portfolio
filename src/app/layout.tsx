@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn, constructMetadata } from "@/lib/utils";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter as FontSans, Poppins, Montserrat, Syne } from "next/font/google";
@@ -11,11 +11,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export const metadata: Metadata = {
-  title: "Hrushikesh Borhade",
-  description:
-    "Creative Developer.Impacting the world through Code, Design and Open Source",
-};
+export const metadata = constructMetadata();
 const fontHeading = localFont({
   src: "../../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
