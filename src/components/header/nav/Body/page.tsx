@@ -67,7 +67,7 @@ export default function Body({
                   ? "open"
                   : "closed"
               }
-              className="m-0 flex overflow-hidden text-7xl pr-8 pt-2.5 font-heading"
+              className="m-0 flex overflow-hidden text-7xl pr-8 pt-2.5 font-syne font-bold"
             >
               {getChars(title)}
             </motion.p>

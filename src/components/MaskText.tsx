@@ -21,7 +21,7 @@ const MaskText = ({ phrases }: MaskTextProps) => {
   const isInView = useInView(body, { once: true, margin: "-20%" });
 
   return (
-    <div ref={body} className="relative text-3xl md:text-4xl font-poppins">
+    <div ref={body} className="relative ">
       {phrases.map((phrase, index) => {
         return (
           <div key={index} className="overflow-hidden">
@@ -30,7 +30,7 @@ const MaskText = ({ phrases }: MaskTextProps) => {
               variants={animate}
               initial="initial"
               animate={isInView ? "enter" : ""}
-              className="mb-2 font-semibold md:mb-3"
+              className="-mb-1 text-[28px] font-bold text-gradient  md:text-4xl font-syne md:mb-3"
             >
               {phrase}
             </motion.p>
@@ -40,7 +40,7 @@ const MaskText = ({ phrases }: MaskTextProps) => {
       <Image
         src="/arrow.svg"
         width={80}
-        height={20}
+        height={8}
         alt="arrow scribble"
         className="absolute left-32 top-5 md:left-[170px] md:top-6 rotate-[15deg] animate-fade-in-rotate [--animation-delay:4000ms] opacity-0 translaye-y-[-10px] "
       />

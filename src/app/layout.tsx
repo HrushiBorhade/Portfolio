@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter as FontSans, Poppins, Montserrat } from "next/font/google";
+import { Inter as FontSans, Poppins, Montserrat, Syne } from "next/font/google";
 import localFont from "next/font/local";
 import Header from "@/components/header/page";
 import Dock from "@/components/Dock";
@@ -30,6 +30,11 @@ const fontMontserrat = Montserrat({
   variable: "--font-montserrat",
   weight: ["100", "200", "300", "400", "500", "600"],
 });
+export const fontSyne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+  weight: ["400", "500", "600", "700", "800"],
+});
 export default function RootLayout({
   children,
 }: {
@@ -47,6 +52,8 @@ export default function RootLayout({
           fontSans.variable,
           fontHeading.variable,
           fontHeading.className,
+          fontSyne.className,
+          fontSyne.variable,
           fontPoppins.className,
           fontPoppins.variable,
           fontMontserrat.className,

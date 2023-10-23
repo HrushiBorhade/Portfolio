@@ -39,14 +39,14 @@ const Header = ({}: HeaderProps) => {
           ></div>
           <div className="relative flex items-center even:">
             <motion.p
-              className="m-0 font-medium font-poppins"
+              className="m-0 font-medium font-syne"
               variants={opacity}
               animate={!isActive ? "open" : "closed"}
             >
               Menu
             </motion.p>
             <motion.p
-              className="absolute m-0 font-medium opacity-0 font-poppins"
+              className="absolute m-0 font-medium opacity-0 font-syne"
               variants={opacity}
               animate={isActive ? "open" : "closed"}
             >

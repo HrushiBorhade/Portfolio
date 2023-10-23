@@ -61,8 +61,8 @@ export default function Home() {
     xPercent2 += 0.1 * direction2;
   };
   const phrases = [
-    "Hey, I'm Hrushi",
-    "Developer & Student from India",
+    "Hey, I'm Hrushi.",
+    "Developer & Student.",
     "I create elevating Digital Experiences✨",
   ];
 
@@ -77,17 +77,17 @@ export default function Home() {
           <MaskText phrases={phrases} />
         </div>
 
-        <div className="absolute custom-top-2 md:mt-20 animate-fade-in [--animation-delay:3000ms] opacity-0 translaye-y-[-10px]">
+        <div className="absolute custom-top-2  mt-10 md:mt-20 animate-fade-in [--animation-delay:3000ms] opacity-0 translaye-y-[-10px]">
           <div ref={slider2} className="relative whitespace-nowrap ">
             <p
               ref={firstText2}
-              className="relative m-0  text-white  font-heading text-[8rem] md:text-[11rem] pr-12 "
+              className="relative m-0  text-white tracking-tight font-syne font-bold text-[5rem] md:text-[11rem] pr-6    md:pr-12 "
             >
               Creative Developer -
             </p>
             <p
               ref={secondText2}
-              className="absolute left-[100%]  top-0 m-0 text-white font-heading text-[8rem] md:text-[11rem] pr-12  "
+              className="absolute left-[100%] tracking-tight top-0 m-0 text-white font-syne font-bold text-[5rem] md:text-[11rem] pr-12  "
             >
               Creative Developer -
             </p>
