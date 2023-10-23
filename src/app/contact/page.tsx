@@ -29,7 +29,7 @@ export default function Example() {
   return (
     <div className="bg-black ">
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-16 md:mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s, i) => (
             <Card key={i}>
               <Link
@@ -45,10 +45,10 @@ export default function Example() {
                   {s.icon}
                 </span>{" "}
                 <div className="z-10 flex flex-col items-center">
-                  <span className="font-medium duration-150 lg:text-xl xl:text-3xl text-zinc-200 group-hover:text-white font-heading">
+                  <span className="font-bold duration-150 lg:text-xl xl:text-2xl text-zinc-200 text-gradient group-hover:text-white font-syne">
                     {s.handle}
                   </span>
-                  <span className="mt-4 text-sm text-center duration-1000 font-poppins text-zinc-400 group-hover:text-zinc-200">
+                  <span className="mt-4 text-sm font-medium text-center duration-1000 font-syne text-zinc-400 group-hover:text-zinc-200">
                     {s.label}
                   </span>
                 </div>
