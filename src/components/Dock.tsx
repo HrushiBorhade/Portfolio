@@ -18,7 +18,7 @@ export default function Dock() {
       // @ts-ignore
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="flex items-end h-20 gap-2 px-1 pb-2 mx-auto border border-zinc-800 sm:px-3 bg-stone-700/20 -z-10 rounded-2xl backdrop-opacity-50 backdrop-filter backdrop-blur-sm animate-fade-in [--animation-delay:1500ms] opacity-0 translaye-y-[-10px]"
+      className="flex items-end h-20 gap-2 px-1 pb-2 mx-auto border border-zinc-800 sm:px-3 bg-stone-700/20 -z-10 rounded-2xl backdrop-opacity-50 backdrop-filter backdrop-blur-sm animate-fade-in [--animation-delay:3500ms] opacity-0 translaye-y-[-10px]"
     >
       <div className="hidden md:block">
         <AppIcon
@@ -57,7 +57,7 @@ export default function Dock() {
         mouseX={mouseX}
         src="/resume.png"
         title="resume"
-        link="https://drive.google.com/file/d/1JawsJBzlaMyLoQYAUfXQ8N1in2I4xRzp/view?usp=sharing"
+        link="https://drive.google.com/file/d/14bQG9wraD2NbIG_5EiVxp-649AjRdp_O/view?usp=sharing"
       />
     </motion.div>
   );

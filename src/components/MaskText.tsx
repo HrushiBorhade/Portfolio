@@ -1,11 +1,10 @@
 "use client";
-import { useInView, motion } from "framer-motion";
-import { useRef } from "react";
+import { useInView, motion, delay } from "framer-motion";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 interface MaskTextProps {
   phrases: string[];
 }
-
 const MaskText = ({ phrases }: MaskTextProps) => {
   const animate = {
     initial: { y: "140%" },
@@ -43,7 +42,7 @@ const MaskText = ({ phrases }: MaskTextProps) => {
         width={80}
         height={20}
         alt="arrow scribble"
-        className="absolute left-32 top-5 md:left-[170px] md:top-6 rotate-[15deg] animate-fade-in-rotate [--animation-delay:1500ms] opacity-0 translaye-y-[-10px] "
+        className="absolute left-32 top-5 md:left-[170px] md:top-6 rotate-[15deg] animate-fade-in-rotate [--animation-delay:4000ms] opacity-0 translaye-y-[-10px] "
       />
     </div>
   );

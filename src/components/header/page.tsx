@@ -21,32 +21,9 @@ const Header = ({}: HeaderProps) => {
     <motion.div
       variants={bg}
       animate={isActive ? "open" : "closed"}
-      className="fixed z-50 w-full backdrop-blur-[12px] animate-fade-in-opp  [--animation-delay:1500ms] opacity-0 translaye-y-[20px]"
+      className="fixed  z-50 w-full  animate-fade-in-opp  [--animation-delay:3500ms] opacity-0 translaye-y-[20px]"
     >
       <motion.div className="relative flex p-2.5 pt-4items-center justify-center text-md font-medium uppercase md:text-sm lg:text-base">
-        <Link
-          href="/"
-          className="absolute top-0 font-medium tracking-tight capitalize left-4 text sm:top-1"
-        >
-          {isActive ? (
-            <Image
-              src="/me2.png"
-              width={48}
-              height={48}
-              alt="memoji"
-              className="mt-1 scale-125 hover:scale-150 w-14 h-14 "
-            />
-          ) : (
-            <Image
-              src="/me.png"
-              width={48}
-              height={48}
-              alt="memoji"
-              className="w-12 h-12 mt-1 sm:w-12 sm:h-12"
-            />
-          )}
-        </Link>
-
         <div
           onClick={() => {
             setIsActive(!isActive);
@@ -83,7 +60,7 @@ const Header = ({}: HeaderProps) => {
         variants={background}
         initial="initial"
         animate={isActive ? "open" : "closed"}
-        className="bg-black/90 h-screen w-full absolute left-0 top-[100%]"
+        className="bg-transparent h-screen w-full absolute left-0 top-[100%]"
       ></motion.div>
 
       <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>

@@ -13,18 +13,25 @@ export interface project {
 interface ProjectsProps {}
 export const projects: project[] = [
   {
+    title: "AskDoc",
+    description: "Ask Questions & chat with your Documents",
+    src: "askdoc.png",
+    color: "#14021a",
+    link: "https://askdoc-ai.vercel.app/",
+  },
+  {
     title: "Devlink",
     description: "Unifying Developers around the world",
     src: "devlink.png",
-    color: "#4b4657",
-    link: "https://github.com/HrushiBorhade/DevLink",
+    color: "#120a24",
+    link: "https://devlink-hrushiborhade.vercel.app/",
   },
   {
     title: "Sage.ai",
     description: "Your Mental Health Companion",
     src: "sage-ai.png",
     color: "#939b5f",
-    link: "https://github.com/HrushiBorhade/Sage-AI",
+    link: "https://sage-ai-hrushi.vercel.app/",
   },
   {
     title: "NoteNexus",
@@ -32,13 +39,6 @@ export const projects: project[] = [
     src: "notenexus.png",
     color: "#EFE8D3",
     link: "https://github.com/HrushiBorhade/NoteNexus",
-  },
-  {
-    title: "Pixel.ai",
-    description: "AI-Powered Image Creation",
-    src: "pixel-ai.jpg",
-    color: "#706D63",
-    link: "https://github.com/HrushiBorhade/Pixel-AI",
   },
 ];
 export type modal = {

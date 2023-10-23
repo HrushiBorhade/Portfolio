@@ -8,6 +8,38 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer utilities {
+  body {
+    scroll-behavior: smooth;
+  }
+  .text-gradient {
+    background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255) 30%,
+      rgba(255, 255, 255, 0.38)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .subtext-gradient {
+    background: linear-gradient(
+      to right bottom,
+      rgb(125, 123, 123) 30%,
+      rgba(104, 102, 102, 0.38)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .text-shadow {
+    text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
+  }
+}
+
+.grainy {
+  background-image: url(../../public/bg-img8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     ::-webkit-scrollbar {
