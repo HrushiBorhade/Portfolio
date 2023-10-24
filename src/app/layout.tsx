@@ -43,7 +43,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "font-sans antialiased text-white",
+          "font-sans bg-black antialiased text-white",
           fontSans.className,
           fontSans.variable,
           fontHeading.variable,
