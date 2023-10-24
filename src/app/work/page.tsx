@@ -5,7 +5,7 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <div className="animate-fade-in [--animation-delay:1000ms] opacity-0 translaye-y-[-10px]">
+    <div className="animate-fade-in [--animation-delay:1000ms] opacity-0 translaye-y-[-10px] bg-black">
       <Projects />
     </div>
   );
